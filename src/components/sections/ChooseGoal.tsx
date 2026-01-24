@@ -83,31 +83,39 @@ export default function ChooseGoal() {
               <Link
                 href={goal.href}
                 onClick={() => handleExploreClick(goal.id)}
-                className="goal-card block p-8 h-full group"
+                className="goal-card block p-8 h-full group relative overflow-hidden"
               >
-                {/* Gradient background on hover */}
-                <div className={`absolute inset-0 bg-gradient-to-br ${goal.color} opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl`} />
+                {/* Enhanced gradient background with animation */}
+                <div className={`absolute inset-0 bg-gradient-to-br ${goal.color} opacity-0 group-hover:opacity-100 transition-all duration-500 rounded-xl`} />
+                
+                {/* Subtle glow effect on hover */}
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent" />
+                </div>
                 
                 <div className="relative z-10">
-                  {/* Icon */}
-                  <div className="w-14 h-14 rounded-2xl bg-[var(--color-primary)]/10 flex items-center justify-center mb-5 group-hover:bg-[var(--color-primary)] transition-colors">
-                    <goal.icon className="text-2xl text-[var(--color-primary)] group-hover:text-white transition-colors" />
+                  {/* Enhanced icon with better hover effect */}
+                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[var(--color-primary)]/10 to-[var(--color-primary)]/5 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-gradient-to-br group-hover:from-[var(--color-primary)] group-hover:to-[var(--color-primary-dark)] transition-all duration-300 shadow-sm group-hover:shadow-lg">
+                    <goal.icon className="text-2xl text-[var(--color-primary)] group-hover:text-white transition-all duration-300" />
                   </div>
 
-                  {/* Content */}
-                  <h3 className="font-serif text-xl text-[var(--color-charcoal)] mb-3">
+                  {/* Enhanced content */}
+                  <h3 className="font-serif text-xl text-[var(--color-charcoal)] mb-3 group-hover:text-[var(--color-primary)] transition-colors">
                     {goal.title}
                   </h3>
-                  <p className="text-[var(--color-warm-gray)] text-sm mb-5 leading-relaxed">
+                  <p className="text-[var(--color-warm-gray)] text-sm mb-6 leading-relaxed">
                     {goal.description}
                   </p>
 
-                  {/* CTA */}
-                  <span className="inline-flex items-center gap-2 text-[var(--color-primary)] font-medium text-sm group-hover:gap-3 transition-all">
+                  {/* Enhanced CTA with better animation */}
+                  <span className="inline-flex items-center gap-2 text-[var(--color-primary)] font-semibold text-sm group-hover:gap-4 transition-all duration-300">
                     {goal.cta}
-                    <FaArrowRight className="text-xs" />
+                    <FaArrowRight className="text-xs group-hover:translate-x-1 transition-transform" />
                   </span>
                 </div>
+                
+                {/* Corner accent */}
+                <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[var(--color-gold)]/10 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </Link>
             </motion.div>
           ))}

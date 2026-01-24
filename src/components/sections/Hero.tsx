@@ -26,20 +26,62 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background - Premium gradient with subtle texture */}
+      {/* Enhanced Background with animated gradient mesh */}
       <div className="absolute inset-0 z-0">
-        {/* Base gradient - deep teal to light */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-primary-dark)] via-[var(--color-primary)] to-[var(--color-primary-light)]" />
+        {/* Animated gradient base */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-primary-dark)] via-[var(--color-primary)] to-[var(--color-primary-light)]" />
         
-        {/* Decorative elements */}
+        {/* Animated gradient orbs - floating effect */}
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-1/4 right-0 w-96 h-96 rounded-full bg-white/5 blur-3xl" />
-          <div className="absolute bottom-1/4 left-0 w-80 h-80 rounded-full bg-[var(--color-gold)]/10 blur-3xl" />
-          <div className="absolute top-0 left-1/3 w-72 h-72 rounded-full bg-white/5 blur-3xl" />
+          <motion.div 
+            className="absolute top-1/4 right-0 w-[600px] h-[600px] rounded-full bg-white/10 blur-3xl"
+            animate={{
+              scale: [1, 1.2, 1],
+              x: [0, 50, 0],
+              y: [0, -30, 0],
+            }}
+            transition={{
+              duration: 20,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
+          />
+          <motion.div 
+            className="absolute bottom-1/4 left-0 w-[500px] h-[500px] rounded-full bg-[var(--color-gold)]/20 blur-3xl"
+            animate={{
+              scale: [1, 1.3, 1],
+              x: [0, -40, 0],
+              y: [0, 40, 0],
+            }}
+            transition={{
+              duration: 18,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
+          />
+          <motion.div 
+            className="absolute top-0 left-1/3 w-[400px] h-[400px] rounded-full bg-white/8 blur-3xl"
+            animate={{
+              scale: [1, 1.15, 1],
+              x: [0, 30, 0],
+              y: [0, 50, 0],
+            }}
+            transition={{
+              duration: 22,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
+          />
         </div>
         
-        {/* Bottom fade to white */}
-        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent" />
+        {/* Subtle grid pattern overlay */}
+        <div className="absolute inset-0 opacity-[0.03]" style={{
+          backgroundImage: `radial-gradient(circle at 1px 1px, white 1px, transparent 0)`,
+          backgroundSize: '40px 40px'
+        }} />
+        
+        {/* Enhanced bottom fade with glassmorphism */}
+        <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-white via-white/80 to-transparent backdrop-blur-sm" />
       </div>
 
       {/* Content */}
@@ -124,7 +166,7 @@ export default function Hero() {
             Not sure what to book? Start with a consultation — we&apos;ll guide you.
           </motion.p>
 
-          {/* Trust bar - matching spec (4 items) */}
+          {/* Enhanced trust bar with staggered animation */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -132,15 +174,19 @@ export default function Hero() {
             className="flex flex-wrap items-center justify-center gap-3 md:gap-4"
           >
             {trustItems.map((item, index) => (
-              <div
+              <motion.div
                 key={index}
-                className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 border border-white/20"
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.4, delay: 0.5 + index * 0.1 }}
+                whileHover={{ scale: 1.05, y: -2 }}
+                className="flex items-center gap-2 bg-white/15 backdrop-blur-md rounded-full px-5 py-2.5 border border-white/25 hover:bg-white/20 hover:border-white/30 transition-all cursor-default shadow-lg"
               >
-                <item.icon className="text-[var(--color-gold-light)] text-sm" />
-                <span className="text-white text-xs md:text-sm whitespace-nowrap">
+                <item.icon className="text-[var(--color-gold-light)] text-base" />
+                <span className="text-white text-xs md:text-sm whitespace-nowrap font-medium">
                   {item.text}
                 </span>
-              </div>
+              </motion.div>
             ))}
           </motion.div>
         </div>

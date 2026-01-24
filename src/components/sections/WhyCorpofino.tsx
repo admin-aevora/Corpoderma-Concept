@@ -40,8 +40,14 @@ export default function WhyCorpofino() {
   };
 
   return (
-    <section className="section section-white">
-      <div className="container">
+    <section className="section section-white relative overflow-hidden">
+      {/* Decorative background elements */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-1/4 right-0 w-96 h-96 bg-[var(--color-primary)]/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/4 left-0 w-80 h-80 bg-[var(--color-gold)]/5 rounded-full blur-3xl" />
+      </div>
+      
+      <div className="container relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Content */}
           <motion.div
@@ -66,12 +72,12 @@ export default function WhyCorpofino() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: index * 0.1 }}
-                  className="flex items-start gap-4"
+                  className="flex items-start gap-4 group"
                 >
-                  <div className="w-10 h-10 rounded-xl bg-[var(--color-primary)]/10 flex items-center justify-center flex-shrink-0">
-                    <point.icon className="text-lg text-[var(--color-primary)]" />
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[var(--color-primary)]/10 to-[var(--color-primary)]/5 flex items-center justify-center flex-shrink-0 group-hover:from-[var(--color-primary)] group-hover:to-[var(--color-primary-dark)] transition-all duration-300 shadow-sm group-hover:shadow-md group-hover:scale-110">
+                    <point.icon className="text-lg text-[var(--color-primary)] group-hover:text-white transition-colors duration-300" />
                   </div>
-                  <span className="text-[var(--color-charcoal)] pt-2">
+                  <span className="text-[var(--color-charcoal)] pt-2.5 group-hover:text-[var(--color-primary)] transition-colors">
                     {point.text}
                   </span>
                 </motion.li>

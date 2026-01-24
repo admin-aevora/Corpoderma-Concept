@@ -47,7 +47,7 @@ export default function Packages() {
   };
 
   return (
-    <section className="section section-warm">
+    <section className="section section-warm section-enhanced">
       <div className="container">
         {/* Section header - matching spec */}
         <motion.div
