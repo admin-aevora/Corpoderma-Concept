@@ -21,13 +21,13 @@ const jost = Jost({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://corpodermaspa.com"),
+  metadataBase: new URL("https://corpofinospa.com"),
   title: {
-    default: "Corpoderma Spa & Slimming Lounge | Premium Slimming & Aesthetics in Abu Dhabi",
-    template: "%s | Corpoderma Spa",
+    default: "Corpofino Spa & Slimming Lounge | Premium Slimming & Aesthetics in Abu Dhabi",
+    template: "%s | Corpofino Spa",
   },
   description:
-    "Visible results. Real confidence. Experience premium slimming and aesthetic treatments at Corpoderma Spa in Abu Dhabi. Body contouring, skin treatments, and wellness services with specialist-guided plans.",
+    "Visible results. Real confidence. Experience premium slimming and aesthetic treatments at Corpofino Spa in Abu Dhabi. Body contouring, skin treatments, and wellness services with specialist-guided plans.",
   keywords: [
     "slimming spa Abu Dhabi",
     "body contouring Abu Dhabi",
@@ -37,16 +37,16 @@ export const metadata: Metadata = {
     "lymphatic drainage Abu Dhabi",
     "skin rejuvenation Abu Dhabi",
     "wellness spa Abu Dhabi",
-    "Corpoderma Spa",
+    "Corpofino Spa",
     "body sculpting Abu Dhabi",
   ],
-  authors: [{ name: "Corpoderma Spa & Slimming Lounge" }],
+  authors: [{ name: "Corpofino Spa & Slimming Lounge" }],
   openGraph: {
     type: "website",
     locale: "en_AE",
-    url: "https://corpodermaspa.com",
-    siteName: "Corpoderma Spa & Slimming Lounge",
-    title: "Corpoderma Spa | Visible Results. Real Confidence.",
+    url: "https://corpofinospa.com",
+    siteName: "Corpofino Spa & Slimming Lounge",
+    title: "Corpofino Spa | Visible Results. Real Confidence.",
     description:
       "Premium slimming and aesthetic treatments in Abu Dhabi. Result-driven treatments, specialist-guided plans, and measurable progress.",
     images: [
@@ -54,13 +54,13 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Corpoderma Spa - Abu Dhabi",
+        alt: "Corpofino Spa - Abu Dhabi",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Corpoderma Spa | Premium Slimming & Aesthetics",
+    title: "Corpofino Spa | Premium Slimming & Aesthetics",
     description:
       "Visible results. Real confidence. Premium slimming treatments in Abu Dhabi.",
     images: ["/og-image.jpg"],
@@ -85,10 +85,10 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "HealthAndBeautyBusiness",
-  name: "Corpoderma Spa & Slimming Lounge",
-  image: "https://corpodermaspa.com/og-image.jpg",
-  "@id": "https://corpodermaspa.com",
-  url: "https://corpodermaspa.com",
+  name: "Corpofino Spa & Slimming Lounge",
+  image: "https://corpofinospa.com/og-image.jpg",
+  "@id": "https://corpofinospa.com",
+  url: "https://corpofinospa.com",
   telephone: "+971 2 XXX XXXX",
   address: {
     "@type": "PostalAddress",

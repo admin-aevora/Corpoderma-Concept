@@ -1,4 +1,4 @@
-// Customer reviews and testimonials for Corpoderma Spa
+// Customer reviews and testimonials for Corpofino Spa
 
 export interface Review {
   id: string;

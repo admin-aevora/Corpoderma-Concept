@@ -1,6 +1,6 @@
-# Corpoderma Spa & Slimming Lounge - Concept Redesign
+# Corpofino Spa & Slimming Lounge - Concept Redesign
 
-A modern, conversion-optimized website concept for Corpoderma Spa in Abu Dhabi.
+A modern, conversion-optimized website concept for Corpofino Spa in Abu Dhabi.
 
 ## Overview
 
@@ -48,7 +48,7 @@ src/
 │       ├── TopTreatments.tsx
 │       ├── Results.tsx
 │       ├── Packages.tsx
-│       ├── WhyCorpoderma.tsx
+│       ├── WhyCorpofino.tsx
 │       ├── Reviews.tsx
 │       ├── FAQ.tsx
 │       ├── Location.tsx
@@ -64,7 +64,7 @@ src/
 3. **Top Treatments** - 3 category blocks with treatments
 4. **Results** - Before/after gallery placeholder
 5. **Packages** - AOV boost section
-6. **Why Corpoderma** - Trust section
+6. **Why Corpofino** - Trust section
 7. **Reviews** - Testimonials carousel
 8. **FAQ** - Common questions accordion
 9. **Location** - Map and contact info
@@ -80,4 +80,4 @@ npm run build
 
 ## Disclaimer
 
-Concept redesign by Ihab — for demonstration only. Not affiliated with Corpoderma.
+Concept redesign by Ihab — for demonstration only. Not affiliated with Corpofino.

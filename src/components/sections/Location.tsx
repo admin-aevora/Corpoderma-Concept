@@ -17,7 +17,7 @@ export default function Location() {
   return (
     <section className="section section-white">
       <div className="container">
-        {/* Section header - matching Corpoderma spec */}
+        {/* Section header - matching Corpofino spec */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -29,7 +29,7 @@ export default function Location() {
             Location
           </span>
           <h2 className="text-[var(--color-charcoal)] mb-4">
-            Visit Corpoderma
+            Visit Corpofino
           </h2>
           <p className="text-[var(--color-warm-gray)] max-w-xl mx-auto">
             Book in advance to reserve your preferred slots.
@@ -53,7 +53,7 @@ export default function Location() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Corpoderma Spa Location"
+              title="Corpofino Spa Location"
             />
           </motion.div>
 
@@ -151,7 +151,7 @@ export default function Location() {
               </div>
             </div>
 
-            {/* Action buttons - matching Corpoderma spec */}
+            {/* Action buttons - matching Corpofino spec */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-auto">
               <a
                 href={contactInfo.maps.directionsUrl}

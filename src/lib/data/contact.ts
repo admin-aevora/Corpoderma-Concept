@@ -1,9 +1,9 @@
-// Contact information and business details for Corpoderma Spa & Slimming Lounge
+// Contact information and business details for Corpofino Spa & Slimming Lounge
 
 export const contactInfo = {
   // Business name
-  name: "Corpoderma Spa & Slimming Lounge",
-  shortName: "Corpoderma",
+  name: "Corpofino Spa & Slimming Lounge",
+  shortName: "Corpofino",
   
   // Location - Abu Dhabi
   address: {
@@ -28,29 +28,29 @@ export const contactInfo = {
     display: "05X XXX XXXX",
     link: "https://wa.me/971XXXXXXXXX",
     // Pre-formatted message for general consultation
-    consultationMessage: "Hi Corpoderma 👋\nI want to book a consultation for [Slimming / Skin / Wellness].\nPreferred day/time: __\nName: __",
+    consultationMessage: "Hi Corpofino 👋\nI want to book a consultation for [Slimming / Skin / Wellness].\nPreferred day/time: __\nName: __",
     // Pre-formatted message for treatment booking
-    treatmentMessage: "Hi Corpoderma 👋\nI want to book [Treatment name].\nPreferred day/time: __\nName: __",
+    treatmentMessage: "Hi Corpofino 👋\nI want to book [Treatment name].\nPreferred day/time: __\nName: __",
     // Default message template
-    messageTemplate: "Hi Corpoderma 👋\nI'd like to book a consultation.\nPreferred day/time: \nMy name: ",
+    messageTemplate: "Hi Corpofino 👋\nI'd like to book a consultation.\nPreferred day/time: \nMy name: ",
   },
   
   // Email
   email: {
-    address: "info@corpodermaspa.com",
-    link: "mailto:info@corpodermaspa.com",
+    address: "info@corpofinospa.com",
+    link: "mailto:info@corpofinospa.com",
   },
   
   // Social Media
   social: {
-    instagram: "https://www.instagram.com/corpodermaspa/",
-    facebook: "https://www.facebook.com/corpodermaspa/",
+    instagram: "https://www.instagram.com/corpofinospa/",
+    facebook: "https://www.facebook.com/corpofinospa/",
   },
   
   // Google Maps - Abu Dhabi location
   maps: {
     embedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3631.4!2d54.366!3d24.486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sAbu%20Dhabi!5e0!3m2!1sen!2sae!4v1",
-    directionsUrl: "https://www.google.com/maps/dir/?api=1&destination=Corpoderma+Spa+Abu+Dhabi",
+    directionsUrl: "https://www.google.com/maps/dir/?api=1&destination=Corpofino+Spa+Abu+Dhabi",
   },
 };
 
@@ -73,7 +73,7 @@ export const operatingHours = {
 // Generate WhatsApp link with custom message for consultation
 export const getWhatsAppConsultationLink = (category?: string): string => {
   const baseUrl = contactInfo.whatsapp.link;
-  let message = "Hi Corpoderma 👋\n";
+  let message = "Hi Corpofino 👋\n";
   
   if (category) {
     message += `I want to book a consultation for ${category}.\nPreferred day/time: __\nName: __`;
@@ -87,7 +87,7 @@ export const getWhatsAppConsultationLink = (category?: string): string => {
 // Generate WhatsApp link for treatment booking
 export const getWhatsAppTreatmentLink = (treatment?: string): string => {
   const baseUrl = contactInfo.whatsapp.link;
-  let message = "Hi Corpoderma 👋\n";
+  let message = "Hi Corpofino 👋\n";
   
   if (treatment) {
     message += `I want to book ${treatment}.\nPreferred day/time: __\nName: __`;
@@ -103,7 +103,7 @@ export const getWhatsAppLink = (service?: string): string => {
   return getWhatsAppConsultationLink(service);
 };
 
-// Generate booking link - WhatsApp is primary for Corpoderma
+// Generate booking link - WhatsApp is primary for Corpofino
 export const getBookingLink = (service?: string): string => {
   return getWhatsAppLink(service);
 };

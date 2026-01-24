@@ -9,7 +9,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { contactInfo } from "@/lib/data/contact";
 import { trackWhatsAppClick } from "@/lib/tracking";
 
-// Navigation links matching Corpoderma spec
+// Navigation links matching Corpofino spec
 const navLinks = [
   { href: "/treatments", label: "Treatments" },
   { href: "/results", label: "Results" },
@@ -76,7 +76,7 @@ export default function Header() {
                   : "text-[var(--color-primary)]"
               }`}
             >
-              Corpoderma
+              Corpofino
             </span>
           </Link>
 

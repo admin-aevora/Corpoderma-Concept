@@ -36,7 +36,7 @@ export default function Reviews() {
   return (
     <section className="section section-white overflow-hidden">
       <div className="container">
-        {/* Section header - matching Corpoderma spec */}
+        {/* Section header - matching Corpofino spec */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

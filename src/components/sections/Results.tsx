@@ -131,7 +131,7 @@ export default function Results() {
             <FaArrowRight className="text-sm" />
           </Link>
           <a
-            href={`${contactInfo.whatsapp.link}?text=${encodeURIComponent("Hi Corpoderma 👋\nI'd like to know what's best for me.\nMy goal: __\nName: __")}`}
+            href={`${contactInfo.whatsapp.link}?text=${encodeURIComponent("Hi Corpofino 👋\nI'd like to know what's best for me.\nMy goal: __\nName: __")}`}
             onClick={handleWhatsAppClick}
             target="_blank"
             rel="noopener noreferrer"

@@ -26,7 +26,7 @@ export default function FinalCTA() {
         </div>
       </div>
 
-      {/* Content - matching Corpoderma spec Final CTA */}
+      {/* Content - matching Corpofino spec Final CTA */}
       <div className="container relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -70,7 +70,7 @@ export default function FinalCTA() {
       {/* Disclaimer footer - as per spec */}
       <div className="absolute bottom-4 left-0 right-0 text-center">
         <p className="text-white/40 text-xs">
-          Concept redesign by Ihab — for demonstration only. Not affiliated with Corpoderma.
+          Concept redesign by Ihab — for demonstration only. Not affiliated with Corpofino.
         </p>
       </div>
     </section>

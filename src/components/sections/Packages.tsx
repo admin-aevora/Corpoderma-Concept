@@ -6,7 +6,7 @@ import { FaWhatsapp, FaArrowRight, FaStar } from "react-icons/fa";
 import { contactInfo } from "@/lib/data/contact";
 import { trackWhatsAppClick, trackBookClick } from "@/lib/tracking";
 
-// Package cards matching Corpoderma spec
+// Package cards matching Corpofino spec
 const packages = [
   {
     id: "starter",
@@ -105,7 +105,7 @@ export default function Packages() {
               {/* CTA button based on type */}
               {pkg.ctaType === "whatsapp" && (
                 <a
-                  href={`${contactInfo.whatsapp.link}?text=${encodeURIComponent(`Hi Corpoderma 👋\nI'm interested in the ${pkg.name}.\nName: __`)}`}
+                  href={`${contactInfo.whatsapp.link}?text=${encodeURIComponent(`Hi Corpofino 👋\nI'm interested in the ${pkg.name}.\nName: __`)}`}
                   onClick={() => handleWhatsAppClick(pkg.id)}
                   target="_blank"
                   rel="noopener noreferrer"

@@ -6,7 +6,7 @@ import { FaWhatsapp, FaChevronDown } from "react-icons/fa";
 import { contactInfo } from "@/lib/data/contact";
 import { trackWhatsAppClick } from "@/lib/tracking";
 
-// FAQ items matching Corpoderma spec
+// FAQ items matching Corpofino spec
 const faqItems = [
   {
     question: "Do I need to know what treatment to pick?",
@@ -123,7 +123,7 @@ export default function FAQ() {
             className="text-center"
           >
             <a
-              href={`${contactInfo.whatsapp.link}?text=${encodeURIComponent("Hi Corpoderma 👋\nI have a question about your treatments.")}`}
+              href={`${contactInfo.whatsapp.link}?text=${encodeURIComponent("Hi Corpofino 👋\nI have a question about your treatments.")}`}
               onClick={handleWhatsAppClick}
               target="_blank"
               rel="noopener noreferrer"

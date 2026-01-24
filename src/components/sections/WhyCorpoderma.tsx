@@ -6,7 +6,7 @@ import { FaWhatsapp, FaShieldAlt, FaUserMd, FaChartLine, FaCogs, FaLeaf } from "
 import { contactInfo } from "@/lib/data/contact";
 import { trackWhatsAppClick, trackBookClick } from "@/lib/tracking";
 
-// Trust points matching Corpoderma spec
+// Trust points matching Corpofino spec
 const trustPoints = [
   {
     icon: FaShieldAlt,
@@ -30,13 +30,13 @@ const trustPoints = [
   },
 ];
 
-export default function WhyCorpoderma() {
+export default function WhyCorpofino() {
   const handleWhatsAppClick = () => {
-    trackWhatsAppClick("home", "why_corpoderma");
+    trackWhatsAppClick("home", "why_corpofino");
   };
 
   const handleBookClick = () => {
-    trackBookClick("Consultation", "General", "why_corpoderma");
+    trackBookClick("Consultation", "General", "why_corpofino");
   };
 
   return (
@@ -51,10 +51,10 @@ export default function WhyCorpoderma() {
             transition={{ duration: 0.6 }}
           >
             <span className="text-[var(--color-primary)] text-sm font-medium tracking-wider uppercase mb-3 block">
-              The Corpoderma Difference
+              The Corpofino Difference
             </span>
             <h2 className="text-[var(--color-charcoal)] mb-6">
-              Why clients choose Corpoderma
+              Why clients choose Corpofino
             </h2>
 
             {/* Trust points list - matching spec */}

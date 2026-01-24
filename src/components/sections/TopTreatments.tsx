@@ -6,7 +6,7 @@ import { FaWhatsapp, FaArrowRight } from "react-icons/fa";
 import { getWhatsAppConsultationLink } from "@/lib/data/contact";
 import { trackWhatsAppClick, trackBookClick } from "@/lib/tracking";
 
-// Treatment categories with their treatments - matching Corpoderma spec
+// Treatment categories with their treatments - matching Corpofino spec
 const treatmentCategories = [
   {
     id: "slimming",

@@ -7,7 +7,7 @@ import { HiOutlineSparkles, HiOutlineLightningBolt, HiOutlineHeart } from "react
 import { contactInfo, getWhatsAppConsultationLink } from "@/lib/data/contact";
 import { trackWhatsAppClick, trackBookClick } from "@/lib/tracking";
 
-// Goal cards matching Corpoderma spec
+// Goal cards matching Corpofino spec
 const goalCards = [
   {
     id: "slimming",

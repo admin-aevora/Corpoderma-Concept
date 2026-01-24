@@ -3,7 +3,7 @@ import ChooseGoal from "@/components/sections/ChooseGoal";
 import TopTreatments from "@/components/sections/TopTreatments";
 import Results from "@/components/sections/Results";
 import Packages from "@/components/sections/Packages";
-import WhyCorpoderma from "@/components/sections/WhyCorpoderma";
+import WhyCorpofino from "@/components/sections/WhyCorpofino";
 import Reviews from "@/components/sections/Reviews";
 import FAQ from "@/components/sections/FAQ";
 import Location from "@/components/sections/Location";
@@ -27,8 +27,8 @@ export default function Home() {
       {/* 5) Packages - AOV boost */}
       <Packages />
       
-      {/* 6) Why Corpoderma - Trust section */}
-      <WhyCorpoderma />
+      {/* 6) Why Corpofino - Trust section */}
+      <WhyCorpofino />
       
       {/* 7) Testimonials / Reviews */}
       <Reviews />

@@ -28,7 +28,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <Link href="/" className="inline-block mb-6">
               <span className="font-serif text-3xl font-semibold tracking-tight text-white">
-                Corpoderma
+                Corpofino
               </span>
             </Link>
             <p className="text-white/70 text-sm mb-6 leading-relaxed">
@@ -156,9 +156,9 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-white/10">
         <div className="container py-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/50">
-          <p>&copy; {new Date().getFullYear()} Corpoderma Spa & Slimming Lounge. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Corpofino Spa & Slimming Lounge. All rights reserved.</p>
           <p className="text-white/40 text-xs">
-            Concept by Ihab — Not associated with Corpoderma Spa
+            Concept by Ihab — Not associated with Corpofino Spa
           </p>
         </div>
       </div>

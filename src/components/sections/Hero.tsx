@@ -16,7 +16,7 @@ export default function Hero() {
     trackBookClick("Consultation", "General", "hero");
   };
 
-  // Trust bar items matching Corpoderma spec
+  // Trust bar items matching Corpofino spec
   const trustItems = [
     { icon: FaCheck, text: "Result-driven treatments" },
     { icon: FaShieldAlt, text: "Premium hygienic environment" },
