@@ -3,8 +3,8 @@ export default function Loading() {
     <div className="min-h-screen flex items-center justify-center bg-[var(--color-cream)]">
       <div className="text-center">
         <div className="inline-block animate-pulse">
-          <span className="font-serif text-4xl text-[var(--color-charcoal)]">
-            Plush
+          <span className="font-serif text-4xl text-[var(--color-primary)]">
+            Corpofino
           </span>
         </div>
         <div className="mt-4 flex items-center justify-center gap-1">
